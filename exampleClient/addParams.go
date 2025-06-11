@@ -54,7 +54,9 @@ func addParams(prog *prog) param.PSetOptFunc {
 				" then the program will send this payload on the given"+
 				" topic and then exit. Otherwise it will listen on the"+
 				" topic for a period of time and report each message"+
-				" received")
+				" received",
+			param.AltNames("message"),
+		)
 
 		prog.timeoutParam = ps.Add(paramNameTimeout,
 			psetter.Duration{
