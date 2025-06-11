@@ -36,7 +36,7 @@ type prog struct {
 	progName string
 
 	// program data
-	conn *pusuclt.Client
+	psClt *pusuclt.Client
 
 	logger *slog.Logger
 }
@@ -77,7 +77,7 @@ func (prog *prog) run() {
 
 	prog.startLogger()
 
-	if prog.conn, err = pusuclt.NewClient(
+	if prog.psClt, err = pusuclt.NewClient(
 		prog.namespace, prog.progName,
 		prog.logger, prog.cci); err != nil {
 		prog.logger.Error("could not construct the client connection",
@@ -139,7 +139,7 @@ func (prog *prog) recvAll() {
 		msgRecdChan <- struct{}{}
 	}
 
-	err := prog.conn.Subscribe(nil, pusuclt.TopicHandler{
+	err := prog.psClt.Subscribe(nil, pusuclt.TopicHandler{
 		Topic:   pusu.Topic(prog.topic),
 		Handler: mh,
 	})
@@ -180,7 +180,7 @@ PublishLoop:
 			slog.String("payload", p),
 			slog.Int("message-number", i))
 
-		if err := prog.conn.Publish(cb, prog.topic, []byte(p)); err != nil {
+		if err := prog.psClt.Publish(cb, prog.topic, []byte(p)); err != nil {
 			prog.logger.Error("couldn't publish the payload",
 				prog.topic.Attr(), pusu.ErrorAttr(err))
 			prog.setExitStatus(1)
