@@ -6,8 +6,8 @@ require (
 	github.com/nickwells/check.mod/v2 v2.1.22
 	github.com/nickwells/english.mod v1.2.3
 	github.com/nickwells/param.mod/v6 v6.4.1
-	github.com/nickwells/pusu.mod v0.0.4
-	github.com/nickwells/pusuparams.mod v0.0.2
+	github.com/nickwells/pusu.mod v0.1.0
+	github.com/nickwells/pusuparams.mod v0.1.0
 	github.com/nickwells/slogsetter.mod v1.0.2
 	github.com/nickwells/testhelper.mod/v2 v2.4.1
 	github.com/nickwells/verbose.mod v1.1.11

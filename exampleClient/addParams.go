@@ -37,14 +37,18 @@ func addParams(prog *prog) param.PSetOptFunc {
 				},
 			},
 			"the namespace for the topics",
-			param.Attrs(param.MustBeSet))
+			param.Attrs(param.MustBeSet),
+			param.SeeNote(pusuparams.NoteNameNamespaces),
+		)
 
 		ps.Add(paramNameTopic,
 			pusuparams.TopicSetter{
 				Value: &prog.topic,
 			},
 			"the topic to use",
-			param.Attrs(param.MustBeSet))
+			param.Attrs(param.MustBeSet),
+			param.SeeNote(pusuparams.NoteNameTopics),
+		)
 
 		prog.payloadParam = ps.Add(paramNamePayload,
 			psetter.String[string]{

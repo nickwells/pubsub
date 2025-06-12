@@ -20,10 +20,10 @@ github.com/nickwells/pager.mod v1.0.14 h1:4b05sy9U2MqjnNPrtF7NGsVnKGHB84cJ9o8G3o
 github.com/nickwells/pager.mod v1.0.14/go.mod h1:56iQ3+rYPaARrSfaLwoVFYgo4iLbAUI+UasoDJQuqqE=
 github.com/nickwells/param.mod/v6 v6.4.1 h1:WciHG784RsctT37PU36KsHw9revMqhyI6CvizifXle8=
 github.com/nickwells/param.mod/v6 v6.4.1/go.mod h1:SOYKcC24XllxlhGJzdodRevZNYlfPE4zz9KCFHqagNE=
-github.com/nickwells/pusu.mod v0.0.4 h1:F5OBeXaYIC5BcHHyzKdWXg2d6DeiclexHON142UjV/c=
-github.com/nickwells/pusu.mod v0.0.4/go.mod h1:CRtieQyic7pZTmFJI6QtjFpD9EVzgt3N4ry9BbxRYt4=
-github.com/nickwells/pusuparams.mod v0.0.2 h1:cRpoFQQW8kTLQXdPjJZutysWgfy7FLUs3qOvvoNHYT0=
-github.com/nickwells/pusuparams.mod v0.0.2/go.mod h1:mrbdAhPVrEt2sTxgDSmSG+DTjhjs1SssIX04mTvle3g=
+github.com/nickwells/pusu.mod v0.1.0 h1:mCcO/2wRboXXz3uJdUExxFb/ElIR69+SUnOP9DJ5QuM=
+github.com/nickwells/pusu.mod v0.1.0/go.mod h1:CRtieQyic7pZTmFJI6QtjFpD9EVzgt3N4ry9BbxRYt4=
+github.com/nickwells/pusuparams.mod v0.1.0 h1:P+d3tcGJodmVYOsJDaJ9vf26oJv3RGSlpwqoDGV9+Y0=
+github.com/nickwells/pusuparams.mod v0.1.0/go.mod h1:ZiZGjO6IS7XGCcIt1uXrziTraf/yNHd8Qwp5XAZjwow=
 github.com/nickwells/slogsetter.mod v1.0.2 h1:1JvIIX2ZmW8LiFpvnmGdCLgPHHYYN6klOtRJMVkLOTE=
 github.com/nickwells/slogsetter.mod v1.0.2/go.mod h1:/f8N3YFFl0fVFWr+kvCM2VgZypKgWb5bha9T4vblLLQ=
 github.com/nickwells/strdist.mod/v2 v2.0.5 h1:hXNniNMs1z3wwMSAL4yVqoDX/1/R1qB0K6xXcpzA+rY=

@@ -21,6 +21,9 @@ func makeParamSet(prog *prog) *param.PSet {
 		addParams(prog),
 		addNotes(prog),
 
+		pusuparams.AddNoteNamespaces(),
+		pusuparams.AddNoteTopics(),
+
 		param.SetProgramDescription(
 			"This is an example of a publist/subscribe client program"),
 	)
