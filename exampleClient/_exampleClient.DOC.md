@@ -1,11 +1,8 @@
 <!-- Created by mkdoc DO NOT EDIT. -->
 
-<!-- The contents of this file will be inserted into the generated -->
-<!-- Markdown documentation at the front by the mkdoc command. -->
-<!-- TODO: add any extra documentation -->
 # exampleClient
 
-This is an example of a publist/subscribe client program
+This is an example of a publish/subscribe client program
 
 
 

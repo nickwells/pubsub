@@ -1,8 +1,5 @@
 <!-- Created by mkdoc DO NOT EDIT. -->
 
-<!-- The contents of this file will be inserted into the generated -->
-<!-- Markdown documentation at the front by the mkdoc command. -->
-<!-- TODO: add any extra documentation -->
 # pubSubSvr
 
 This is a publish/subscribe server\. Clients connect to it and subscribe to
