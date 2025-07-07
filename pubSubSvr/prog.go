@@ -190,6 +190,7 @@ func (prog *prog) run() {
 		if err != nil {
 			prog.logger.Error("couldn't Accept the client connection",
 				pusu.ErrorAttr(err))
+
 			continue
 		}
 
@@ -241,6 +242,7 @@ func (prog *prog) pubSubHandler() {
 
 		case <-ticker.C:
 			go logStatus(prog, msgTypeCount, len(subscriptions))
+
 			msgTypeCount = map[pusu.MsgType]int{}
 		}
 	}

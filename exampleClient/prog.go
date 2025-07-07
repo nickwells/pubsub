@@ -116,6 +116,7 @@ PublishLoop:
 			if sendCount == prog.count {
 				prog.logger.Info("all messages published",
 					slog.Int("message-count", sendCount))
+
 				break PublishLoop
 			}
 		case <-time.After(prog.timeout):
@@ -136,6 +137,7 @@ func (prog *prog) recvAll() {
 	var mh pusuclt.MsgHandler = func(t pusu.Topic, payload []byte) {
 		prog.logger.Info("received message",
 			t.Attr(), slog.String("payload", string(payload)))
+
 		msgRecdChan <- struct{}{}
 	}
 
@@ -153,6 +155,7 @@ func (prog *prog) recvAll() {
 	prog.logger.Info("subscribed, waiting to receive messages")
 
 	var receiveCount int
+
 SubscribeLoop:
 	for {
 		select {
@@ -161,6 +164,7 @@ SubscribeLoop:
 			if receiveCount >= prog.count {
 				prog.logger.Info("all messages received",
 					slog.Int("message-count", receiveCount))
+
 				break SubscribeLoop
 			}
 		case <-time.After(prog.timeout):
@@ -184,6 +188,7 @@ PublishLoop:
 			prog.logger.Error("couldn't publish the payload",
 				prog.topic.Attr(), pusu.ErrorAttr(err))
 			prog.setExitStatus(1)
+
 			break PublishLoop
 		}
 	}

@@ -34,6 +34,7 @@ func (rules namespaceRules) checkPrefixes() error {
 			if i == j {
 				continue InnerLoop
 			}
+
 			if strings.HasPrefix(otherPfx, pfx) {
 				redundantCount++
 				errText = fmt.Sprintf(
