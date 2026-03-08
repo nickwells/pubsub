@@ -5,17 +5,17 @@ go 1.25.0
 require (
 	github.com/nickwells/check.mod/v2 v2.1.27
 	github.com/nickwells/english.mod v1.2.7
-	github.com/nickwells/param.mod/v7 v7.0.0
+	github.com/nickwells/param.mod/v7 v7.0.1
 	github.com/nickwells/pusu.mod v0.1.3
-	github.com/nickwells/pusuparams.mod v0.1.5
-	github.com/nickwells/slogsetter.mod v1.0.7
+	github.com/nickwells/pusuparams.mod v0.1.6
+	github.com/nickwells/slogsetter.mod v1.0.8
 	github.com/nickwells/testhelper.mod/v2 v2.4.3
-	github.com/nickwells/verbose.mod v1.1.16
-	github.com/nickwells/versionparams.mod v1.2.20
+	github.com/nickwells/verbose.mod v1.1.17
+	github.com/nickwells/versionparams.mod v1.2.21
 )
 
 require (
-	github.com/nickwells/col.mod/v6 v6.0.1 // indirect
+	github.com/nickwells/col.mod/v6 v6.0.2 // indirect
 	github.com/nickwells/errutil.mod v1.2.22 // indirect
 	github.com/nickwells/filecheck.mod v1.2.11 // indirect
 	github.com/nickwells/fileparse.mod v1.1.37 // indirect
@@ -28,7 +28,7 @@ require (
 	github.com/nickwells/twrap.mod v1.5.12 // indirect
 	github.com/nickwells/xdg.mod v1.0.10 // indirect
 	golang.org/x/exp v0.0.0-20260218203240-3dfff04db8fa // indirect
-	golang.org/x/sys v0.41.0 // indirect
+	golang.org/x/sys v0.42.0 // indirect
 	golang.org/x/term v0.40.0 // indirect
 	google.golang.org/protobuf v1.36.11 // indirect
 )
