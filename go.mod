@@ -5,13 +5,13 @@ go 1.26.0
 require (
 	github.com/nickwells/check.mod/v2 v2.1.29
 	github.com/nickwells/english.mod v1.2.10
-	github.com/nickwells/param.mod/v7 v7.2.1
+	github.com/nickwells/param.mod/v7 v7.2.2
 	github.com/nickwells/pusu.mod v0.1.5
-	github.com/nickwells/pusuparams.mod v0.1.10
-	github.com/nickwells/slogsetter.mod v1.0.12
+	github.com/nickwells/pusuparams.mod v0.1.11
+	github.com/nickwells/slogsetter.mod v1.0.13
 	github.com/nickwells/testhelper.mod/v2 v2.6.1
-	github.com/nickwells/verbose.mod v1.1.21
-	github.com/nickwells/versionparams.mod v1.2.25
+	github.com/nickwells/verbose.mod v1.1.22
+	github.com/nickwells/versionparams.mod v1.2.26
 )
 
 require (
